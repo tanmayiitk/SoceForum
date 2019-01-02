@@ -1,5 +1,7 @@
 
-<a href="#/discussions" class='btn btn-primary'>All Discussions</a>
+<a href="#/discussions" class='btn btn-primary'  style="position:relative;
+top:50%; 
+left:0%;">All Discussions</a>
 <hr>
 
 <div class="container">
@@ -15,11 +17,11 @@
                         Has Started New Discussion.
                     </div>
                     <h6 class="text-muted time"><span am-time-ago="discussion.dateCreated"></span></h6>
-                </div>
-            </div> 
+                </div><br>
+            </div><br>
             <div class="post-description"> 
 
-            	<strong>{{discussion.title}}</strong>
+                <br><strong>{{discussion.title}}</strong>
                 <p>{{discussion.content}}</p>
 
             </div>

@@ -3,11 +3,13 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel='stylesheet' href='/stylesheets/style.css' />    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <meta name="viewport" content="width=device-width">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+   
   </head>
   <body>
-
+    
     <div ng-view></div>
     <script src="https://unpkg.com/translate@1"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
@@ -18,10 +20,11 @@
     <script src="/javascripts/moment/moment.min.js"></script>
     <script src="/javascripts/moment/angular-moment.min.js"></script>
     <script src="/javascripts/moment/pt-br.js"></script>
-
+    
     <script src="/angularjs/app-angular.js"></script>
     <script src="/angularjs/controllers/controllers.js"></script>
     <script src="/angularjs/services/discussionsService.js"></script>
 
+    <% include footer.ejs %>
   </body>
 </html>
