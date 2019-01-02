@@ -5,11 +5,10 @@ body {
 a {
   color: #00B7FF;
 }
-
-
-
-
-
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
 
 /** CSS For Topics **/
 .panel-shadow {
