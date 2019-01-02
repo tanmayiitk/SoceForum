@@ -1,5 +1,16 @@
 var mongoose = require('mongoose');
 
+// single server
+var uri = 'mongodb://soce18:soce18iitk@ds147344.mlab.com:47344/soceforum';
+mongoose.createConnection(uri, { server: { poolSize: 5 }});
+
+// for a replica set
+mongoose.createConnection(uri, { replset: { poolSize: 5 }});
+
+// passing the option in the URI works with single or replica sets
+var uri = 'mongodb://localhost/test?poolSize=4';
+mongoose.createConnection(uri);
+
 mongoose.connect('mongodb://soce18:soce18iitk@ds147344.mlab.com:47344/soceforum');
 
 var Schema = mongoose.Schema;
