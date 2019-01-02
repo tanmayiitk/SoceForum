@@ -8,7 +8,7 @@ mongoose.createConnection(uri, { server: { poolSize: 5 }});
 mongoose.createConnection(uri, { replset: { poolSize: 5 }});
 
 // passing the option in the URI works with single or replica sets
-var uri = 'mongodb://localhost/test?poolSize=4';
+var uri = 'mongodb://soce18:soce18iitk@ds147344.mlab.com:47344/soceforum?poolSize=5';
 mongoose.createConnection(uri);
 
 mongoose.connect('mongodb://soce18:soce18iitk@ds147344.mlab.com:47344/soceforum');
