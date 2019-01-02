@@ -7,7 +7,8 @@ var Schema = mongoose.Schema;
 var	replySchema = new Schema({
 	author: { type: String, required: true },
 	content: { type: String, required: true },
-	dateCreated: { type: Date, default: Date.now }
+	dateCreated: { type: Date, default: Date.now } } , 
+	 {usePushEach: true
 });
 
 var discussionSchema = new Schema({
