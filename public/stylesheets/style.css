@@ -1,13 +1,15 @@
 body {
-  padding: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 a {
   color: #00B7FF;
 }
+
 @viewport {
   width: device-width ;
-  zoom: 1.0 ;
+  
 }
 
 /** CSS For Topics **/
